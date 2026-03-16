@@ -1,0 +1,58 @@
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: penpot_ai_db
+    environment:
+      POSTGRES_USER: penpot_ai
+      POSTGRES_PASSWORD: penpot_ai_secret
+      POSTGRES_DB: penpot_ai
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./ms-ollmark-ia
+      dockerfile: Dockerfile
+    container_name: penpot_ai_backend
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=penpot_ai
+      - DB_USER=penpot_ai
+      - DB_PASSWORD=penpot_ai_secret
+      # Keep other env variables if needed, or pass the .env file
+    env_file:
+      - ./ms-ollmark-ia/.env
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./pg-ollmark-genration-ia
+      dockerfile: Dockerfile
+    container_name: penpot_ai_frontend
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./pg-ollmark-genration-ia:/app
+      - /app/node_modules
+    env_file:
+      - ./pg-ollmark-genration-ia/.env
+    networks:
+      - app-network
+
+volumes:
+  pgdata:
+
+networks:
+  app-network:
+    driver: bridge

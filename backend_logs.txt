@@ -1,0 +1,500 @@
+﻿2026-03-16 15:22:31.088 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.p.a.a.service.TaskOrchestrator - No pending tasks to cancel
+2026-03-16 15:22:31.088 [http-nio-0.0.0.0-8080-exec-1] INFO  c.p.a.i.session.SessionManager - Unregistered session 7213090f-aaac-60fe-e31c-b80041c76003 (user token: none)
+2026-03-16 15:22:31.089 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 0
+2026-03-16 15:22:33.225 [http-nio-0.0.0.0-8080-exec-3] INFO  c.p.a.i.session.SessionManager - Registered session d141daab-24f0-3fa9-81a9-caa3a125005b (no user token)
+2026-03-16 15:22:33.225 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 1
+2026-03-16 15:22:33.225 [http-nio-0.0.0.0-8080-exec-3] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection established: d141daab-24f0-3fa9-81a9-caa3a125005b (active connections: 1)
+2026-03-16 15:22:33.317 [http-nio-0.0.0.0-8080-exec-5] INFO  c.p.a.i.session.SessionManager - Registered session 2dad085a-0060-c822-5900-25adb578453f (no user token)
+2026-03-16 15:22:33.317 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 2
+2026-03-16 15:22:33.318 [http-nio-0.0.0.0-8080-exec-5] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection established: 2dad085a-0060-c822-5900-25adb578453f (active connections: 2)
+2026-03-16 15:22:35.660 [http-nio-0.0.0.0-8080-exec-7] ERROR c.p.a.a.i.w.PluginWebSocketHandler - WebSocket transport error for session 2dad085a-0060-c822-5900-25adb578453f
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1333)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1218)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:74)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-03-16 15:22:35.665 [http-nio-0.0.0.0-8080-exec-8] ERROR c.p.a.a.i.w.PluginWebSocketHandler - WebSocket transport error for session d141daab-24f0-3fa9-81a9-caa3a125005b
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1333)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1218)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:74)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-03-16 15:22:35.667 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.i.session.SessionManager - Unregistered session d141daab-24f0-3fa9-81a9-caa3a125005b (user token: none)
+2026-03-16 15:32:10.167 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 1
+2026-03-16 15:32:10.168 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection closed: d141daab-24f0-3fa9-81a9-caa3a125005b - CloseStatus[code=1011, reason=null] (active connections: 1)
+2026-03-16 15:32:10.168 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.i.session.SessionManager - Unregistered session d141daab-24f0-3fa9-81a9-caa3a125005b (user token: none)
+2026-03-16 15:32:10.168 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 1
+2026-03-16 15:32:10.177 [http-nio-0.0.0.0-8080-exec-7] INFO  c.p.a.i.session.SessionManager - Unregistered session 2dad085a-0060-c822-5900-25adb578453f (user token: none)
+2026-03-16 15:32:10.178 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 0
+2026-03-16 15:32:10.178 [http-nio-0.0.0.0-8080-exec-7] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection closed: 2dad085a-0060-c822-5900-25adb578453f - CloseStatus[code=1011, reason=null] (active connections: 0)
+2026-03-16 15:32:10.186 [http-nio-0.0.0.0-8080-exec-7] WARN  c.p.a.a.i.w.PluginWebSocketHandler - No active sessions remaining - cancelling all pending tasks
+2026-03-16 15:32:10.187 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.p.a.a.service.TaskOrchestrator - No pending tasks to cancel
+2026-03-16 15:32:10.188 [http-nio-0.0.0.0-8080-exec-7] INFO  c.p.a.i.session.SessionManager - Unregistered session 2dad085a-0060-c822-5900-25adb578453f (user token: none)
+2026-03-16 15:32:10.197 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 0
+2026-03-16 23:01:05.473 [http-nio-0.0.0.0-8080-exec-9] INFO  c.p.a.i.session.SessionManager - Registered session 11ddd60e-5dde-fcb9-7691-01e2d44aacc3 (no user token)
+2026-03-16 23:01:05.474 [http-nio-0.0.0.0-8080-exec-9] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 1
+2026-03-16 23:01:05.474 [http-nio-0.0.0.0-8080-exec-9] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection established: 11ddd60e-5dde-fcb9-7691-01e2d44aacc3 (active connections: 1)
+2026-03-16 23:01:05.502 [http-nio-0.0.0.0-8080-exec-10] INFO  c.p.a.i.session.SessionManager - Registered session 2fce7efd-db25-f459-bd81-85c137d64006 (no user token)
+2026-03-16 23:01:05.502 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 2
+2026-03-16 23:01:05.502 [http-nio-0.0.0.0-8080-exec-10] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection established: 2fce7efd-db25-f459-bd81-85c137d64006 (active connections: 2)
+2026-03-16 23:02:19.089 [http-nio-0.0.0.0-8080-exec-2] INFO  c.p.a.i.session.SessionManager - Unregistered session 11ddd60e-5dde-fcb9-7691-01e2d44aacc3 (user token: none)
+2026-03-16 23:02:19.090 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 1
+2026-03-16 23:02:19.090 [http-nio-0.0.0.0-8080-exec-2] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection closed: 11ddd60e-5dde-fcb9-7691-01e2d44aacc3 - CloseStatus[code=1001, reason=null] (active connections: 1)
+2026-03-16 23:02:19.219 [http-nio-0.0.0.0-8080-exec-1] INFO  c.p.a.i.session.SessionManager - Registered session c9f226d2-29cc-b3d6-e5bb-c1baaadb0d4b (no user token)
+2026-03-16 23:02:19.220 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 2
+2026-03-16 23:02:19.220 [http-nio-0.0.0.0-8080-exec-1] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection established: c9f226d2-29cc-b3d6-e5bb-c1baaadb0d4b (active connections: 2)
+2026-03-16 23:02:21.874 [http-nio-0.0.0.0-8080-exec-5] INFO  c.p.a.i.session.SessionManager - Unregistered session c9f226d2-29cc-b3d6-e5bb-c1baaadb0d4b (user token: none)
+2026-03-16 23:02:21.875 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 1
+2026-03-16 23:02:21.875 [http-nio-0.0.0.0-8080-exec-5] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection closed: c9f226d2-29cc-b3d6-e5bb-c1baaadb0d4b - CloseStatus[code=1001, reason=null] (active connections: 1)
+2026-03-17 00:30:09.852 [http-nio-0.0.0.0-8080-exec-6] INFO  c.p.a.i.session.SessionManager - Unregistered session 2fce7efd-db25-f459-bd81-85c137d64006 (user token: none)
+2026-03-17 00:30:09.989 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.i.session.SessionManager - Registered session 52557c14-db59-208b-c78d-c5f07fb00424 (no user token)
+2026-03-17 00:30:10.122 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 1
+2026-03-17 00:30:10.122 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 1
+2026-03-17 00:30:10.122 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection established: 52557c14-db59-208b-c78d-c5f07fb00424 (active connections: 1)
+2026-03-17 00:30:10.123 [http-nio-0.0.0.0-8080-exec-6] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection closed: 2fce7efd-db25-f459-bd81-85c137d64006 - CloseStatus[code=1001, reason=null] (active connections: 1)
+2026-03-17 00:30:23.561 [http-nio-0.0.0.0-8080-exec-7] INFO  c.p.a.i.session.SessionManager - Registered session 54c1f916-808b-3693-d755-e7cbc6b78306 (no user token)
+2026-03-17 00:30:23.561 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.p.a.i.session.SessionManager - Total active sessions: 2
+2026-03-17 00:30:23.562 [http-nio-0.0.0.0-8080-exec-7] INFO  c.p.a.a.i.w.PluginWebSocketHandler - WebSocket connection established: 54c1f916-808b-3693-d755-e7cbc6b78306 (active connections: 2)
+2026-03-17 00:30:30.705 [http-nio-0.0.0.0-8080-exec-2] INFO  c.p.ai.adapters.in.web.AiController - DELETE /api/ai/chat/8fd8c29f-33f9-8038-8007-1986fa3e1ed9 (projectId: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9)
+2026-03-17 00:30:30.707 [http-nio-0.0.0.0-8080-exec-2] INFO  c.p.a.a.u.ConversationChatUseCaseImpl - Clearing conversation history for project: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9
+2026-03-17 00:30:30.741 [http-nio-0.0.0.0-8080-exec-2] INFO  c.p.a.a.out.ai.OllamaAiAdapter - Clearing conversation history for: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9
+2026-03-17 00:30:30.986 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.p.a.a.service.MessageService - Suppression de tous les messages du projet 8fd8c29f-33f9-8038-8007-1986fa3e1ed9
+2026-03-17 00:30:30.991 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.p.a.a.service.MessageService - 1 message(s) supprim├®(s) pour le projet 8fd8c29f-33f9-8038-8007-1986fa3e1ed9
+2026-03-17 00:30:31.001 [http-nio-0.0.0.0-8080-exec-2] INFO  c.p.a.a.out.ai.OllamaAiAdapter - Cleared conversation: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9
+2026-03-17 00:30:31.006 [http-nio-0.0.0.0-8080-exec-2] INFO  c.p.a.a.u.ConversationChatUseCaseImpl - Conversation for project 8fd8c29f-33f9-8038-8007-1986fa3e1ed9 cleared successfully
+2026-03-17 00:30:31.068 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.p.a.a.service.ConversationService - Suppression de toutes les conversations du projet 8fd8c29f-33f9-8038-8007-1986fa3e1ed9
+2026-03-17 00:30:31.407 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.p.a.a.service.ConversationService - 8fd8c29f-33f9-8038-8007-1986fa3e1ed9 conversation(s) supprim├®e(s) pour le projet {}
+2026-03-17 00:30:31.514 [http-nio-0.0.0.0-8080-exec-4] INFO  c.p.ai.adapters.in.web.AiController - POST /api/ai/chat/new (projectId: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9)
+2026-03-17 00:30:31.515 [http-nio-0.0.0.0-8080-exec-4] INFO  c.p.a.a.u.ConversationChatUseCaseImpl - Started new conversation for project: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9
+2026-03-17 00:30:37.499 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.ai.adapters.in.web.AiController - POST /api/ai/chat (projectId: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9, message length: 24 chars)
+2026-03-17 00:30:37.499 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.u.ConversationChatUseCaseImpl - Processing chat for project: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9 (conversationKey: 8fd8c29f-33f9-8038-8007-1986fa3e1ed9:54c1f916-808b-3693-d755-e7cbc6b78306, sessionId: 54c1f916-808b-3693-d755-e7cbc6b78306)
+2026-03-17 00:30:37.501 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.o.a.RequestComplexityAnalyzer - Complexity detected: SIMPLE (message='dessigne un carrer rouge...')
+2026-03-17 00:30:37.501 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.out.ai.OllamaAiAdapter - Processing chat (conversation=8fd8c29f-33f9-8038-8007-1986fa3e1ed9:54c1f916-808b-3693-d755-e7cbc6b78306, complexity=SIMPLE, messageLength=24)
+2026-03-17 00:30:37.502 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.router.IntentRouterService - [Router] Classifying intent for message: 'dessigne un carrer rouge'
+2026-03-17 00:30:37.708 [http-nio-0.0.0.0-8080-exec-8] WARN  o.s.ai.retry.RetryUtils - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: HTTP 404 - {"error":"model 'llama3.1' not found"}
+	at org.springframework.ai.retry.autoconfigure.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:126)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$body$0(DefaultRestClient.java:757)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:757)
+	at org.springframework.ai.ollama.api.OllamaApi.chat(OllamaApi.java:115)
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$1(OllamaChatModel.java:248)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$3(OllamaChatModel.java:248)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.ollama.OllamaChatModel.internalCall(OllamaChatModel.java:246)
+	at org.springframework.ai.ollama.OllamaChatModel.call(OllamaChatModel.java:231)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:539)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:537)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:517)
+	at com.penpot.ai.application.router.IntentRouterService.classifyWithStructuredOutput(IntentRouterService.java:207)
+	at com.penpot.ai.application.router.IntentRouterService.route(IntentRouterService.java:172)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter.chat(OllamaAiAdapter.java:187)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter$$SpringCGLIB$$1.chat(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter$$SpringCGLIB$$0.chat(<generated>)
+	at com.penpot.ai.application.usecases.ConversationChatUseCaseImpl.chat(ConversationChatUseCaseImpl.java:82)
+	at com.penpot.ai.adapters.in.web.AiController.chat(AiController.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-03-17 00:30:37.725 [http-nio-0.0.0.0-8080-exec-8] WARN  c.p.a.a.router.IntentRouterService - [Router] Structured output failed, falling back to keyword scan. Cause: Unexpected error during structured output classification
+2026-03-17 00:30:37.739 [http-nio-0.0.0.0-8080-exec-8] WARN  o.s.ai.retry.RetryUtils - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: HTTP 404 - {"error":"model 'llama3.1' not found"}
+	at org.springframework.ai.retry.autoconfigure.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:126)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$body$0(DefaultRestClient.java:757)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:757)
+	at org.springframework.ai.ollama.api.OllamaApi.chat(OllamaApi.java:115)
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$1(OllamaChatModel.java:248)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$3(OllamaChatModel.java:248)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.ollama.OllamaChatModel.internalCall(OllamaChatModel.java:246)
+	at org.springframework.ai.ollama.OllamaChatModel.call(OllamaChatModel.java:231)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:539)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:537)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:517)
+	at com.penpot.ai.application.router.IntentRouterService.classifyWithKeywordScan(IntentRouterService.java:238)
+	at com.penpot.ai.application.router.IntentRouterService.route(IntentRouterService.java:180)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter.chat(OllamaAiAdapter.java:187)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter$$SpringCGLIB$$1.chat(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter$$SpringCGLIB$$0.chat(<generated>)
+	at com.penpot.ai.application.usecases.ConversationChatUseCaseImpl.chat(ConversationChatUseCaseImpl.java:82)
+	at com.penpot.ai.adapters.in.web.AiController.chat(AiController.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-03-17 00:30:37.743 [http-nio-0.0.0.0-8080-exec-8] ERROR c.p.a.a.router.IntentRouterService - [Router] All classification strategies failed. Using INSPECTION fallback.
+org.springframework.ai.retry.NonTransientAiException: HTTP 404 - {"error":"model 'llama3.1' not found"}
+	at org.springframework.ai.retry.autoconfigure.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:126)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$body$0(DefaultRestClient.java:757)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:757)
+	at org.springframework.ai.ollama.api.OllamaApi.chat(OllamaApi.java:115)
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$1(OllamaChatModel.java:248)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$3(OllamaChatModel.java:248)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.ollama.OllamaChatModel.internalCall(OllamaChatModel.java:246)
+	at org.springframework.ai.ollama.OllamaChatModel.call(OllamaChatModel.java:231)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:56)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:539)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:537)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:517)
+	at com.penpot.ai.application.router.IntentRouterService.classifyWithKeywordScan(IntentRouterService.java:238)
+	at com.penpot.ai.application.router.IntentRouterService.route(IntentRouterService.java:180)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter.chat(OllamaAiAdapter.java:187)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter$$SpringCGLIB$$1.chat(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.penpot.ai.adapters.out.ai.OllamaAiAdapter$$SpringCGLIB$$0.chat(<generated>)
+	at com.penpot.ai.application.usecases.ConversationChatUseCaseImpl.chat(ConversationChatUseCaseImpl.java:82)
+	at com.penpot.ai.adapters.in.web.AiController.chat(AiController.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-03-17 00:30:37.748 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.out.ai.OllamaAiAdapter - [Router] ÔåÆ categories: [INSPECTION]
+2026-03-17 00:30:37.750 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.router.PenpotToolRegistry - [Registry] Resolved 1 tool instance(s) for categories: [INSPECTION]
+2026-03-17 00:30:37.750 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.out.ai.OllamaAiAdapter - [Registry] ÔåÆ 1 tool instance(s) selected
+2026-03-17 00:30:37.753 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.service.SessionContextHolder - [SessionContext] sessionId set: 54c1f916-808b-3693-d755-e7cbc6b78306
+2026-03-17 00:30:37.824 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.a.InspectionFirstAdvisor - [InspectionFirstAdvisor] INSPECTION detected ÔåÆ injecting PAGE context
+2026-03-17 00:30:37.824 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.tools.PenpotInspectorTools - Tool called: getPageContext(compact)
+2026-03-17 00:30:37.825 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.t.support.PenpotToolExecutor - [ToolExecutor] Executing 'get page context' (sessionId: 54c1f916-808b-3693-d755-e7cbc6b78306)
+2026-03-17 00:30:37.825 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.u.ExecuteCodeUseCaseImpl - Executing code use case (code length: 1374 chars)
+2026-03-17 00:30:37.825 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.o.plugin.PluginBridgeAdapter - Has active connection: true
+2026-03-17 00:30:37.825 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.i.factory.TaskFactory - Creating execute code task with ID: 36a9ac49-ad67-477a-aa0c-db774286d949
+2026-03-17 00:30:37.825 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.u.ExecuteCodeUseCaseImpl - Created task with ID: 36a9ac49-ad67-477a-aa0c-db774286d949 (sessionId: 54c1f916-808b-3693-d755-e7cbc6b78306)
+2026-03-17 00:30:37.826 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.o.plugin.PluginBridgeAdapter - Sending task 36a9ac49-ad67-477a-aa0c-db774286d949 to plugin (type: EXECUTE_CODE)
+2026-03-17 00:30:37.826 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.i.session.SessionManager - Finding session with criteria: SessionCriteria(requireActive=true, sessionId=Optional[54c1f916-808b-3693-d755-e7cbc6b78306])
+2026-03-17 00:30:37.826 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.i.session.SessionManager - Session lookup by ID 54c1f916-808b-3693-d755-e7cbc6b78306: found
+2026-03-17 00:30:37.827 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.service.TaskOrchestrator - Registered task 36a9ac49-ad67-477a-aa0c-db774286d949 for response tracking (total pending: 1)
+2026-03-17 00:30:37.827 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.o.plugin.PluginBridgeAdapter - Sending WebSocket message: {"id":"36a9ac49-ad67-477a-aa0c-db774286d949","task":"executeCode","params":{"code":"const verbosity = (\"compact\" || \"compact\").toLowerCase();\r\n\r\nconst page = penpot.currentPage;\r\nconst all = page ? (page.findShapes?.({}) ?? []) : [];\r\n\r\nconst safeColor = (c) => c?.toString?.() ?? c ?? null;\r\n\r\nconst out = [];\r\n\r\nfor (const s of (Array.isArray(all) ? all : [])) {\r\n  if (!s || !s.id) continue;\r\n\r\n  const item = {\r\n    id: s.id ?? null,\r\n    name: s.name ?? null,\r\n    type: s.type ?? null,\r\n    x: s.x ?? null,\r\n    y: s.y ?? null,\r\n    width: s.width ?? null,\r\n    height: s.height ?? null,\r\n    fills: [],\r\n    strokes: []\r\n  };\r\n\r\n  try {\r\n    if (s.fills === \"mixed\") {\r\n      item.fills = [{ color: \"mixed\", opacity: null, type: null }];\r\n    } else if (Array.isArray(s.fills)) {\r\n      item.fills = s.fills.map(f => ({\r\n        color: safeColor(f?.fillColor ?? f?.color),\r\n        opacity: f?.opacity ?? null,\r\n        type: f?.type ?? null\r\n      }));\r\n    }\r\n  } catch (e) {}\r\n\r\n  try {\r\n    if (Array.isArray(s.strokes)) {\r\n      item.strokes = s.strokes.map(st => ({\r\n        color: safeColor(st?.strokeColor ?? st?.color),\r\n        opacity: st?.opacity ?? null,\r\n        width: st?.width ?? null\r\n      }));\r\n    }\r\n  } catch (e) {}\r\n\r\n  if (verbosity === \"full\") {\r\n    try { item.opacity = s.opacity ?? null; } catch(e) {}\r\n    try { item.rotation = s.rotation ?? null; } catch(e) {}\r\n  }\r\n\r\n  out.push(item);\r\n}\r\n\r\nreturn JSON.stringify(out);"}}
+2026-03-17 00:30:37.828 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.o.plugin.PluginBridgeAdapter - Task 36a9ac49-ad67-477a-aa0c-db774286d949 sent successfully, waiting for response...
+2026-03-17 00:30:37.836 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.p.a.a.i.w.PluginWebSocketHandler - Received WebSocket message from session 54c1f916-808b-3693-d755-e7cbc6b78306: {"type":"task-response","response":{"id":"36a9ac49-ad67-477a-aa0c-db774286d949","success":true,"data":{"result":"[{\"id\":\"00000000-0000-0000-0000-000000000000\",\"name\":\"Root Frame\",\"type\":\"bo... (truncated)
+2026-03-17 00:30:37.842 [http-nio-0.0.0.0-8080-exec-7] INFO  c.p.a.a.i.w.PluginWebSocketHandler - Parsed task response: id=36a9ac49-ad67-477a-aa0c-db774286d949, success=true
+2026-03-17 00:30:37.842 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.p.a.a.service.TaskOrchestrator - Completing future for task 36a9ac49-ad67-477a-aa0c-db774286d949 (success: true)
+2026-03-17 00:30:37.843 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.o.plugin.PluginBridgeAdapter - Received response for task 36a9ac49-ad67-477a-aa0c-db774286d949: success=true, hasData=true
+2026-03-17 00:30:37.843 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.service.TaskOrchestrator - Unregistered task 36a9ac49-ad67-477a-aa0c-db774286d949 (total pending: 0)
+2026-03-17 00:30:37.843 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.u.ExecuteCodeUseCaseImpl - Formatted result using: CodeExecutionResultFormatter
+2026-03-17 00:30:37.844 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.a.ToolRetryLimiterAdvisor - [ToolRetryLimiterAdvisor] triggered - retryCount=0
+2026-03-17 00:30:37.844 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.a.ToolRetryLimiterAdvisor - [ToolRetryLimiterAdvisor] Allowing retry attempt 1
+2026-03-17 00:30:37.844 [http-nio-0.0.0.0-8080-exec-8] WARN  c.p.a.a.advisor.ToolErrorAdvisor - ToolErrorAdvisor triggered
+2026-03-17 00:30:37.857 [http-nio-0.0.0.0-8080-exec-8] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - request: ChatClientRequest[prompt=Prompt{messages=[SystemMessage{textContent='# CONTEXTE ACTUEL DE LA PAGE
+Voici les ├®l├®ments pr├®sents sur la page Penpot avec leurs propri├®t├®s et UUIDs.
+R├êGLES :
+- N'invente jamais d'UUID.
+- Utilise uniquement les UUIDs fournis ici.
+- Si ambigu, pose UNE question courte.
+- Cette liste est PLATE : elle ne contient PAS la hi├®rarchie r├®elle.
+OBLIGATOIRE :
+Pour toute question concernant children, parent, root, hi├®rarchie, index dans les layers, s├®lection ou ├®tat r├®el de la page,
+tu DOIS appeler le tool correspondant (getChildrenFromShape, getParentFromShape, getComponentRoot, getShapeParentIndex, getPropertiesFromShape).
+Ne d├®duis jamais la hi├®rarchie depuis cette liste.
+{
+  "result": "[{\"id\":\"00000000-0000-0000-0000-000000000000\",\"name\":\"Root Frame\",\"type\":\"board\",\"x\":0,\"y\":0,\"width\":0.01,\"height\":0.01,\"fills\":[{\"color\":\"#FFFFFF\",\"opacity\":null,\"type\":null}],\"strokes\":[]}]",
+  "log": ""
+}
+', messageType=SYSTEM, metadata={messageType=SYSTEM}}, UserMessage{content='dessigne un carrer rouge', metadata={messageType=USER}, messageType=USER}], modelOptions=org.springframework.ai.ollama.api.OllamaChatOptions@305d10a3}, context={chat_memory_conversation_id=8fd8c29f-33f9-8038-8007-1986fa3e1ed9:54c1f916-808b-3693-d755-e7cbc6b78306, toolRetryCount=1, toolCategories=[INSPECTION], inspectionInjected=true}]
+2026-03-17 00:30:37.858 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.advisor.ReReadingAdvisor - [ReReadingAdvisor] Applying Re2 to message of 24 chars
+2026-03-17 00:30:57.491 [http-nio-0.0.0.0-8080-exec-8] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - response: {
+  "results" : [ {
+    "output" : {
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "toolCalls" : [ ],
+      "media" : [ ],
+      "text" : "Je ne peux pas cr├®er de nouveaux ├®l├®ments ou modifier la page directement. Cependant, je peux vous aider ├á analyser les ├®l├®ments existants ou ├á obtenir des informations sur la page. Pour dessiner un carr├® rouge, vous devrez utiliser l'interface de Penpot directement :\n\n1. Cliquez sur le bouton \"Ajouter\" (ou \"+\" en haut ├á gauche)\n2. S├®lectionnez \"Rectangle\" dans le menu contextuel\n3. Dessinez un carr├® en maintenant la touche Ctrl (ou Cmd) pour maintenir les proportions\n4. Remplacez la couleur de remplissage en cliquant sur le rectangle et en s├®lectionnant un rouge dans la palette de couleurs\n\nVoulez-vous v├®rifier les propri├®t├®s de l'├®l├®ment \"Root Frame\" pour voir ses dimensions actuelles ?"
+    },
+    "metadata" : {
+      "finishReason" : "stop",
+      "contentFilters" : [ ],
+      "empty" : false
+    }
+  } ],
+  "metadata" : {
+    "id" : "",
+    "model" : "qwen3:8b",
+    "rateLimit" : {
+      "requestsLimit" : 0,
+      "requestsRemaining" : 0,
+      "requestsReset" : 0.0,
+      "tokensLimit" : 0,
+      "tokensRemaining" : 0,
+      "tokensReset" : 0.0
+    },
+    "usage" : {
+      "promptTokens" : 1276,
+      "completionTokens" : 566,
+      "totalTokens" : 1842
+    },
+    "promptMetadata" : [ ],
+    "empty" : false
+  },
+  "result" : {
+    "output" : {
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "toolCalls" : [ ],
+      "media" : [ ],
+      "text" : "Je ne peux pas cr├®er de nouveaux ├®l├®ments ou modifier la page directement. Cependant, je peux vous aider ├á analyser les ├®l├®ments existants ou ├á obtenir des informations sur la page. Pour dessiner un carr├® rouge, vous devrez utiliser l'interface de Penpot directement :\n\n1. Cliquez sur le bouton \"Ajouter\" (ou \"+\" en haut ├á gauche)\n2. S├®lectionnez \"Rectangle\" dans le menu contextuel\n3. Dessinez un carr├® en maintenant la touche Ctrl (ou Cmd) pour maintenir les proportions\n4. Remplacez la couleur de remplissage en cliquant sur le rectangle et en s├®lectionnant un rouge dans la palette de couleurs\n\nVoulez-vous v├®rifier les propri├®t├®s de l'├®l├®ment \"Root Frame\" pour voir ses dimensions actuelles ?"
+    },
+    "metadata" : {
+      "finishReason" : "stop",
+      "contentFilters" : [ ],
+      "empty" : false
+    }
+  }
+}
+2026-03-17 00:30:57.498 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.p.a.a.service.SessionContextHolder - [SessionContext] sessionId cleared
+2026-03-17 00:30:57.508 [http-nio-0.0.0.0-8080-exec-8] INFO  c.p.a.a.u.ConversationChatUseCaseImpl - [Persistence] Triggering persist for project=8fd8c29f-33f9-8038-8007-1986fa3e1ed9 sessionId=54c1f916-808b-3693-d755-e7cbc6b78306 responseLength=697
+2026-03-17 00:30:57.515 [task-2] INFO  c.p.a.a.s.MessagePersistenceService - [Persistence] persist() called ÔÇö projectId=8fd8c29f-33f9-8038-8007-1986fa3e1ed9 sessionId=54c1f916-808b-3693-d755-e7cbc6b78306
+2026-03-17 00:30:57.542 [task-2] DEBUG c.p.a.a.s.MessagePersistenceService - [Persistence] Creating conversation: 54c1f916-808b-3693-d755-e7cbc6b78306
+2026-03-17 00:30:57.551 [task-2] DEBUG c.p.a.a.s.MessagePersistenceService - [Persistence] Saved message for conversation 54c1f916-808b-3693-d755-e7cbc6b78306 (project 8fd8c29f-33f9-8038-8007-1986fa3e1ed9)

@@ -1,0 +1,15 @@
+meta {
+  name: History
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/api/ai/chat/test-project/history?limit=10
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:8080
+}

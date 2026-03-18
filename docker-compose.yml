@@ -1,52 +1,62 @@
+version: '3.8'
 
 services:
+  # Base de données PostgreSQL
   postgres:
     image: postgres:15-alpine
-    container_name: penpot_ai_db
+    container_name: ollmark-db
     environment:
-      POSTGRES_USER: penpot_ai
-      POSTGRES_PASSWORD: penpot_ai_secret
-      POSTGRES_DB: penpot_ai
+      POSTGRES_USER: ${DB_USER:-penpot_ai}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-penpot_ai_secret}
+      POSTGRES_DB: ${DB_NAME:-penpot_ai}
     ports:
-      - "5433:5432"
+      - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-penpot_ai} -d ${DB_NAME:-penpot_ai}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
+  # Backend Spring Boot
   backend:
     build:
       context: ./ms-ollmark-ia
       dockerfile: Dockerfile
-    container_name: penpot_ai_backend
+    container_name: ollmark-backend
+    ports:
+      - "8080:8080"
     environment:
       - DB_HOST=postgres
       - DB_PORT=5432
-      - DB_NAME=penpot_ai
-      - DB_USER=penpot_ai
-      - DB_PASSWORD=penpot_ai_secret
-      # Keep other env variables if needed, or pass the .env file
-    env_file:
-      - ./ms-ollmark-ia/.env
-    ports:
-      - "8080:8080"
+      - DB_NAME=${DB_NAME:-penpot_ai}
+      - DB_USER=${DB_USER:-penpot_ai}
+      - DB_PASSWORD=${DB_PASSWORD:-penpot_ai_secret}
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/${DB_NAME:-penpot_ai}
+      - SPRING_DATASOURCE_USERNAME=${DB_USER:-penpot_ai}
+      - SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD:-penpot_ai_secret}
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434/ # Pointing to local Ollama
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     networks:
       - app-network
 
+  # Frontend Angular
   frontend:
     build:
       context: ./pg-ollmark-genration-ia
       dockerfile: Dockerfile
-    container_name: penpot_ai_frontend
+    container_name: ollmark-frontend
     ports:
       - "4200:4200"
-    volumes:
-      - ./pg-ollmark-genration-ia:/app
-      - /app/node_modules
-    env_file:
-      - ./pg-ollmark-genration-ia/.env
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
     networks:
       - app-network
 
